@@ -1,4 +1,4 @@
-baseURL: "https://yuanprogram.github.io/my-blog/"
+baseURL: "https://yuanprogram.github.io/"
 title: "Yuan's Blog"
 theme: "PaperMod"  # 改为单引号
 
