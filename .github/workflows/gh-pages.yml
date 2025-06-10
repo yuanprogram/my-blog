@@ -28,6 +28,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           # 修改这里，使用你创建的 PAT
-          github_token: ${{ secrets.GH_PAT }}
+          github_token: ${{ secrets.PAT }}
           external_repository: yuanprogram/yuanprogram.github.io  # 目标仓库
           publish_dir: ./public
