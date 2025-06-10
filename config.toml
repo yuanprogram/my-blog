@@ -1,7 +1,7 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://yuanprogram.github.io/"
+baseURL = "https://yuanprogram.github.io/my-blog/"  # 必须包含 /my-blog
 title = "MemE"
 languageCode = "zh-CN"
 hasCJKLanguage = true
