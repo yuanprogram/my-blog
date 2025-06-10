@@ -12,20 +12,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true  # 拉取主题子模块
+          submodules: true
           fetch-depth: 0
-      
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
-      
+
       - name: Build
         run: hugo --minify
-      
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # 修改这里，使用你创建的 PAT
+          github_token: ${{ secrets.GH_PAT }}
           publish_dir: ./public
