@@ -1,8 +1,8 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://yuanprogram.github.io/my-blog/"  # 必须包含 /my-blog
-title = "MemE"
+baseURL = "https://yuanprogram.github.io/"  # 必须包含 /my-blog
+title = "Yuan's Blog"
 languageCode = "zh-CN"
 hasCJKLanguage = true
 
@@ -28,7 +28,7 @@ pluralizeListTitles = false
 summaryLength = 42
 
 # 是否开启 GitHub 风格的 Emoji 书写方式
-enableEmoji = false
+enableEmoji = true
 
 # 脚注的返回链接中的文本
 footnoteReturnLinkContents = "↩"
@@ -300,13 +300,19 @@ uglyURLs = false
     # 3. posts     文章摘要
     # 4. page      普通页面
 
-    homeLayout = "posts"
+    homeLayout = "poetry"
 
-    ## 「诗意人生」
-    # 诗句，支持 Markdown
-    homePoetry = []
-    # 底部链接的内间距，单位：em
-    homeLinksPadding = 1
+   ## 「诗意人生」诗句（支持Markdown）
+    homePoetry = [
+        "#### 少年心事当拏云，谁念幽寒坐呜呃。",
+        "—— 李贺《致酒行》",
+        "",  # 空行
+        "**技术之路亦如诗，每一行代码都是对未来的告白**"  # 副标题
+    ]
+    homeLinksPadding = 1.5  # 底部链接间距（视觉更舒适）
+
+    ######################################
+   
 
     ## 「视频片段」
     homePoster = ""
@@ -334,7 +340,7 @@ uglyURLs = false
     # 说明：用于 JSON-LD、Open Graph
 
     # 站点的描述
-    siteDescription = "MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。"
+    siteDescription = "记录技术思考与生活感悟的个人博客，分享编程经验、技术随笔与成长故事。"
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
 
@@ -1481,16 +1487,14 @@ uglyURLs = false
     # 作者信息
     [params.author]
         # 名字
-        name = "reuixiy"
+        name = "yuan"
         # 邮箱
-        email = "reuixiy@gmail.com"
+        email = "2408170818@qq.com"
         # 座右铭或简介
-        motto = "Viva La Vida"
+        motto = "技术探索者 | 终身学习者"
         # 头像
-        avatar = "/icons/apple-touch-icon.png"
+        avatar = "/icons/1.jpg"
         # 网站（默认值：baseURL）
-        website = "https://io-oi.me/"
-        # 推特
-        twitter = "reuixiy"
-        # Fediverse
-        fediverse = "@reuixiy@bird.makeup"
+        website ="https://yuanprogram.github.io/"
+        
+        
